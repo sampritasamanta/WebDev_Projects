@@ -1,55 +1,172 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Landing Page</title>
+    <meta name="description" content="Suraksha Glove - Gesture-Based Emergency Communication System.">
+
+    <title>Suraksha Glove | Emergency Communication</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        header {
-            background-color: #3498db;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-
-        h1, h2 {
-            color: #3498db;
-        }
-
-        p {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
             line-height: 1.6;
         }
 
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
         }
 
-        .cta-button:hover {
-            background-color: #2980b9;
+        header h2 {
+            margin: 0;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #0f172a, #164e63);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 18px auto;
+            color: #e0f2fe;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px 6px;
+            padding: 12px 22px;
+            background: #0ea5e9;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+
+        .button:hover {
+            background: #0284c7;
+        }
+
+        .secondary-button {
+            background: transparent;
+            border: 1px solid white;
+        }
+
+        .secondary-button:hover {
+            background: #164e63;
+        }
+
+        section {
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        section h2 {
+            color: #075985;
+            margin-top: 0;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 18px;
+        }
+
+        .feature {
+            background: #f0f9ff;
+            padding: 20px;
+            border-radius: 9px;
+            border: 1px solid #bae6fd;
+        }
+
+        .feature h3 {
+            color: #075985;
+            margin-top: 0;
+        }
+
+        .technology {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .technology span {
+            background: #e0f2fe;
+            color: #075985;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            background: #0f172a;
+            color: white;
+            padding: 22px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            section {
+                margin: 18px 12px;
+                padding: 22px;
+            }
         }
     </style>
 </head>
@@ -57,23 +174,144 @@
 <body>
 
     <header>
-        <h1>Your Landing Page</h1>
-        <p>Welcome to our amazing world!</p>
+        <h2>Suraksha Glove</h2>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#working">Working</a>
+            <a href="#technology">Technology</a>
+            <a href="#contact">Source Code</a>
+        </nav>
     </header>
 
-    <section>
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget lorem nec justo dapibus fringilla.
-            Integer ullamcorper, est in vehicula fermentum, nibh purus imperdiet orci, eu facilisis quam libero vel
-            mauris.</p>
-    </section>
+    <main>
 
-    <section>
-        <h2>Get Started</h2>
-        <p>Ready to join us? Click the button below to get started!</p>
-        <a href="#" class="cta-button">Sign Up Now</a>
-    </section>
+        <div class="hero">
+            <h1>Suraksha Glove</h1>
+
+            <p>
+                Gesture-Based Emergency Communication System
+            </p>
+
+            <p>
+                An Arduino-based prototype exploring how hand gestures
+                can be used to communicate basic emergency messages.
+            </p>
+
+            <a class="button"
+               href="#about">
+                Explore Project
+            </a>
+
+            <a class="button secondary-button"
+               href="https://github.com/sampritasamanta/Suraksha-Glove"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Source Code
+            </a>
+        </div>
+
+        <section id="about">
+            <h2>About the Project</h2>
+
+            <p>
+                Suraksha Glove is a gesture-based emergency communication
+                prototype designed to explore an alternative way of
+                sending simple messages when conventional verbal
+                communication is difficult.
+            </p>
+
+            <p>
+                The prototype uses flex sensors and an inertial
+                measurement unit to capture hand movement and gestures.
+                An Arduino UNO processes the sensor inputs and supports
+                communication of predefined messages.
+            </p>
+        </section>
+
+        <section id="working">
+            <h2>How It Works</h2>
+
+            <div class="features">
+
+                <div class="feature">
+                    <h3>01. Gesture Detection</h3>
+                    <p>
+                        Flex sensors detect finger bending,
+                        while the MPU6050 provides motion-related data.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>02. Processing</h3>
+                    <p>
+                        Arduino UNO reads the sensor values
+                        and processes the gesture inputs.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>03. Message Output</h3>
+                    <p>
+                        Predefined messages such as HELP, YES
+                        and NO can be communicated through
+                        the prototype's output system.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="technology">
+            <h2>Hardware & Technologies</h2>
+
+            <div class="technology">
+                <span>Arduino UNO</span>
+                <span>Flex Sensors</span>
+                <span>MPU6050</span>
+                <span>16×2 LCD</span>
+                <span>HC-05 Bluetooth</span>
+                <span>Embedded C/C++</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project Objective</h2>
+
+            <p>
+                The objective is to explore a low-cost,
+                gesture-based communication approach using
+                embedded electronics and sensor integration.
+            </p>
+
+            <p>
+                This is an academic prototype, not a certified
+                emergency or medical communication device.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Explore the Source Code</h2>
+
+            <p>
+                Visit the GitHub repository to explore the
+                project's implementation and development.
+            </p>
+
+            <a class="button"
+               href="https://github.com/sampritasamanta/Suraksha-Glove"
+               target="_blank"
+               rel="noopener noreferrer">
+                Open GitHub Repository
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Suraksha Glove | An Academic Project</p>
+        <p>Developed by Team Noventra</p>
+    </footer>
 
 </body>
-
 </html>
