@@ -1,82 +1,333 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Samprita Samanta, ECE graduate and M.Tech student in VLSI and Microelectronics.">
+
+    <title>Samprita Samanta | Portfolio</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background: #0f172a;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            margin: 0;
+            color: #60a5fa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .hero {
             text-align: center;
-            padding: 20px;
+            padding: 85px 20px;
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 21px;
+            font-weight: normal;
+            color: #bfdbfe;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 20px auto;
+            color: #e2e8f0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 22px;
+            margin-top: 12px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+
+        .button:hover {
+            background: #2563eb;
         }
 
         section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
         }
 
-        h2 {
-            color: #333;
+        section h2 {
+            color: #1e3a8a;
+            margin-top: 0;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .project {
+            border-left: 4px solid #3b82f6;
+            padding: 15px 20px;
+            margin: 20px 0;
+            background: #f8fafc;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+        .project a, .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .project a:hover, .contact a:hover {
+            text-decoration: underline;
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 22px;
+            background: #0f172a;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            section {
+                margin: 18px 12px;
+                padding: 22px;
+            }
         }
     </style>
-    <title>Your Portfolio</title>
 </head>
+
 <body>
 
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer</p>
+        <h2>Samprita Samanta</h2>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! I am a passionate web developer with a focus on creating responsive and user-friendly websites.</p>
-    </section>
+    <main>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div>
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-        </div>
-        <div>
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-        </div>
-    </section>
+        <div class="hero">
+            <h1>Hi, I'm Samprita Samanta</h1>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your@email.com</p>
-        <p>LinkedIn: linkedin.com/yourprofile</p>
-        <p>GitHub: github.com/yourusername</p>
-    </section>
+            <h2>ECE Graduate | M.Tech Student in VLSI & Microelectronics</h2>
+
+            <p>
+                Interested in frontend development, embedded systems,
+                digital electronics and VLSI technology.
+                I enjoy learning new technologies and building
+                practical projects.
+            </p>
+
+            <a class="button"
+               href="https://github.com/sampritasamanta"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visit My GitHub
+            </a>
+        </div>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                I am an Electronics and Communication Engineering graduate
+                from Techno Main Salt Lake and currently pursuing an
+                M.Tech in VLSI and Microelectronics.
+            </p>
+
+            <p>
+                My interests include web development, programming,
+                embedded systems and digital IC design.
+                I like exploring how hardware and software can work together
+                to solve practical problems.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+
+            <div class="project">
+                <h3>M.Tech – VLSI and Microelectronics</h3>
+                <p>Techno Main Salt Lake</p>
+                <p>Currently Pursuing | 2025–2028 (Expected)</p>
+            </div>
+
+            <div class="project">
+                <h3>B.Tech – Electronics and Communication Engineering</h3>
+                <p>Techno Main Salt Lake</p>
+                <p>Graduated in 2025 | CGPA: 8.07</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">C</span>
+                <span class="skill">C++</span>
+                <span class="skill">Python</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Arduino</span>
+                <span class="skill">Verilog</span>
+                <span class="skill">Digital Electronics</span>
+            </div>
+
+            <p>
+                These are technologies and technical areas I have studied
+                or explored through coursework and projects.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="project">
+                <h3>1. Suraksha Glove</h3>
+
+                <p>
+                    Gesture-Based Emergency Communication System
+                    using Arduino UNO, flex sensors, MPU6050,
+                    LCD and Bluetooth communication.
+                </p>
+
+                <a href="https://github.com/sampritasamanta/Suraksha-Glove"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View GitHub Repository
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>2. ML Health Tracker</h3>
+
+                <p>
+                    A machine learning project exploring
+                    Isolation Forest for health-related data analysis.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>3. Web Development Projects</h3>
+
+                <p>
+                    A collection of frontend projects including
+                    a portfolio webpage, landing page and
+                    temperature converter using HTML, CSS and JavaScript.
+                </p>
+
+                <a href="https://github.com/sampritasamanta/WebDev_Projects"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View GitHub Repository
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact & Profiles</h2>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/sampritasamanta"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    github.com/sampritasamanta
+                </a>
+            </p>
+
+            <p>
+                I am open to learning opportunities and
+                technology-focused collaborations.
+            </p>
+        </section>
+
+    </main>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2026 Samprita Samanta. All rights reserved.</p>
     </footer>
 
 </body>
